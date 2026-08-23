@@ -46,7 +46,7 @@
         <label class="fine"><input type="checkbox" name="sms_consent" value="yes"> I agree to receive follow-up texts about my restaurant growth request. Message/data rates may apply. Reply STOP to opt out.</label>
         <input type="hidden" name="source" value="Restaurant Convention 2026">
         <button type="submit">Get My Restaurant Growth Blueprint</button>
-        <div class="fine" id="status">Your information will be sent to Charity Loves AI for follow-up.</div>
+        <div class="fine" id="status">Your information will be sent securely to Charity Loves AI for follow-up.</div>
       </form>
     </section>
 
@@ -60,7 +60,6 @@
     <div class="brand">Charity Loves AI · Restaurant Growth Systems</div>
   </main>
 <script>
-  const WEBHOOK_URL = "REPLACE_WITH_GHL_WEBHOOK_URL";
   const cards = [...document.querySelectorAll('.cloche')];
   const offer = document.getElementById('offer');
   cards.forEach(card => {
@@ -76,13 +75,12 @@
   document.getElementById('leadForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     const status = document.getElementById('status');
-    if (WEBHOOK_URL.includes('REPLACE_WITH')) { status.textContent = 'Webhook URL must be configured before launch.'; return; }
     const formData = new FormData(e.currentTarget);
     const payload = Object.fromEntries(formData.entries());
     payload.sms_consent = formData.get('sms_consent') === 'yes';
     status.textContent = 'Sending…';
     try {
-      const res = await fetch(WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      const res = await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
       if(!res.ok) throw new Error('Request failed');
       status.textContent = 'Success — your restaurant growth request is in.';
       e.currentTarget.reset();
