@@ -6,86 +6,14 @@
 <title>Restaurant Guest Revival™ | Charity Loves AI</title>
 <meta name="description" content="Restaurant Guest Revival by Charity Loves AI.">
 <style>
-:root{
-  --cream:#fbf6e8;--cream2:#f7efdc;--paper:#fffdf7;--green:#0c4439;--green2:#123f37;
-  --gold:#a9791e;--gold2:#d7a93d;--sage:#71807b;--line:#dfd1b3;--shadow:rgba(73,53,17,.13)
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--green);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit}.site{overflow:hidden;background:var(--cream)}
-.header{background:var(--paper);padding:28px 24px 26px}
-.brand{max-width:1080px;margin:auto;display:flex;align-items:center;gap:20px}
-.logo{width:72px;height:72px;border:2px solid var(--gold2);border-radius:50%;display:grid;place-items:center;color:#b48627;font:italic 37px Georgia,serif;flex:0 0 auto}
-.brand-copy h1{margin:0;font-size:26px;letter-spacing:.145em;font-weight:800}
-.brand-copy p{margin:8px 0 0;color:#7f8580;font-size:16px;letter-spacing:.10em;font-weight:700}
-.event-bar{background:var(--green);color:#efc96d;text-align:center;padding:20px 14px;font-size:14px;letter-spacing:.18em;font-weight:800}
-.hero{position:relative;padding:88px 24px 86px;background:linear-gradient(180deg,#fbf4df,#f8efda);overflow:hidden}
-.hero:after{content:"";position:absolute;left:-30%;right:-30%;bottom:-350px;height:570px;background:rgba(255,255,255,.6);border-radius:50% 50% 0 0/35% 35% 0 0;transform:rotate(-2deg)}
-.hero-inner{position:relative;z-index:1;max-width:1060px;margin:auto}
-.kicker,.section-kicker{display:flex;align-items:center;gap:17px;color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-size:16px;font-weight:800}
-.kicker:before,.section-kicker:before{content:"";width:52px;height:2px;background:var(--gold)}
-.hero h2{margin:40px 0 0;max-width:940px;font:400 clamp(58px,7vw,100px)/.95 Georgia,serif;letter-spacing:-.038em}
-.hero h2 em{color:#bd8a18;font-weight:400}
-.hero p{max-width:900px;margin:48px 0 0;color:#697873;font-size:clamp(25px,3vw,36px);line-height:1.55}
-.hero-actions{display:flex;flex-direction:column;align-items:flex-start;gap:32px;margin-top:60px}
-.primary{display:flex;align-items:center;justify-content:space-between;gap:44px;min-width:455px;background:#d8aa3c;text-decoration:none;padding:26px 40px;font-size:22px;font-weight:800}
-.secondary{font-size:20px;font-weight:800;text-decoration:none;border-bottom:2px solid #c3a159;padding-bottom:18px}
-.experience{padding:78px 24px 92px;background:#fffaf0}
-.experience-inner{max-width:1160px;margin:auto}
-.experience .section-kicker{justify-content:center}
-.experience h2{max-width:920px;margin:42px auto 20px;text-align:center;font:400 clamp(52px,6vw,82px)/1.03 Georgia,serif;letter-spacing:-.025em}
-.experience-intro{max-width:820px;margin:0 auto 62px;text-align:center;color:var(--sage);font-size:clamp(20px,2.5vw,29px);line-height:1.58}
-.cloche-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;align-items:start}
-.cloche-item{position:relative;text-align:center;cursor:pointer;outline:none;padding:22px 0 0;border-radius:4px}
-.cloche-item:focus-visible{outline:2px solid var(--gold2);outline-offset:8px}
-.cloche-stage{position:relative;display:flex;align-items:center;justify-content:center;min-height:260px}
-.cloche-img{display:block;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 24px 22px var(--shadow));transition:transform .5s cubic-bezier(.2,.8,.2,1),filter .3s ease;will-change:transform}
-.touch{margin-top:20px;color:var(--gold);font-size:14px;letter-spacing:.20em;font-weight:800;text-transform:uppercase;transition:opacity .25s}
-.reveal{max-height:0;opacity:0;overflow:hidden;transform:translateY(18px);transition:max-height .52s ease,opacity .38s ease,transform .5s ease;margin-top:10px}
-.reveal-inner{background:var(--paper);border-top:1px solid var(--line);padding:28px 18px 30px;box-shadow:0 18px 38px rgba(64,47,17,.08)}
-.reveal small{display:block;color:var(--gold);text-transform:uppercase;letter-spacing:.17em;font-size:12px;font-weight:800}
-.reveal h3{margin:10px 0 10px;font:400 31px/1.05 Georgia,serif}
-.reveal p{margin:0;color:var(--sage);font-size:16px;line-height:1.55}
-.cloche-item.open .cloche-img{transform:translateY(-38px) scale(.985)}
-.cloche-item.open .touch{opacity:.25}
-.cloche-item.open .reveal{max-height:330px;opacity:1;transform:translateY(-20px)}
-.custom-note{max-width:760px;margin:66px auto 0;text-align:center;color:#87918d;font:italic clamp(22px,2.4vw,29px)/1.45 Georgia,serif}
-.proof{background:var(--paper);padding:62px 24px 0}
-.proof-inner{max-width:900px;margin:auto}
-.proof-art{width:100%;height:auto;display:block;border-radius:44% 44% 4px 4px/16% 16% 4px 4px;box-shadow:0 22px 48px rgba(44,36,22,.10)}
-.hidden-opportunity{background:#f4ead1;padding:88px 24px 96px}
-.hidden-inner{max-width:980px;margin:auto}
-.hidden-opportunity h3{margin:38px 0 0;max-width:920px;font:400 clamp(54px,7vw,88px)/1.03 Georgia,serif;letter-spacing:-.025em}
-.lead-wrap{background:var(--paper);padding:76px 24px 92px}
-.lead{max-width:880px;margin:auto}
-.lead h3{font:400 48px Georgia,serif;margin:0 0 10px}
-.lead>p{color:var(--sage);font-size:19px;line-height:1.55;margin:0 0 24px}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.sp{margin-top:14px}
-input,select{width:100%;padding:15px 16px;border:1px solid #d8ceb8;background:#fff;border-radius:4px;font:inherit;color:var(--green)}
-.consent{display:block;margin-top:14px;font-size:13px;line-height:1.5;color:#6f746e}
-.submit{margin-top:16px;width:100%;border:0;background:var(--green);color:#fff;padding:17px 20px;font-size:17px;font-weight:800;cursor:pointer}
-#status{margin-top:12px;color:#6d746f;font-size:13px}
-.paid{margin-top:30px;text-align:center;padding:34px;background:var(--green);color:white}
-.paid h3{font:400 36px Georgia,serif;margin:0 0 10px}.paid p{color:#d8e0dc;line-height:1.55;margin:0 auto 18px;max-width:700px}
-.paid a{display:inline-block;background:#d9aa3f;color:var(--green);text-decoration:none;padding:16px 24px;font-weight:800}
-@media(max-width:900px){
-  .cloche-grid{grid-template-columns:1fr;gap:58px;max-width:760px;margin:auto}
-  .cloche-stage{min-height:auto}.cloche-img{width:min(96vw,760px)}
-  .reveal-inner{padding:30px 24px 34px}.reveal h3{font-size:40px}.reveal p{font-size:18px}
-}
-@media(max-width:600px){
-  .header{padding:30px 24px 27px}.brand{gap:19px}.logo{width:64px;height:64px;font-size:32px}.brand-copy h1{font-size:19px}.brand-copy p{font-size:13px}
-  .event-bar{font-size:12px;padding:18px 8px;white-space:nowrap;letter-spacing:.14em}
-  .hero{padding:76px 24px 68px}.hero h2{font-size:54px}.hero p{font-size:24px;margin-top:36px}.primary{min-width:0;width:100%;font-size:18px;padding:21px 24px}.secondary{font-size:17px}
-  .experience{padding:62px 0 80px}.experience-inner{width:100%}.experience .section-kicker{padding:0 24px;justify-content:flex-start}.experience h2{font-size:52px;padding:0 24px;margin-top:34px}.experience-intro{font-size:23px;padding:0 24px;margin-bottom:50px}
-  .cloche-grid{gap:70px}.cloche-item{padding:0}.cloche-stage{width:100%;overflow:visible}.cloche-img{width:100vw;max-width:none}.touch{margin-top:24px;font-size:14px}
-  .cloche-item.open .cloche-img{transform:translateY(-72px) scale(.99)}.cloche-item.open .reveal{transform:translateY(-55px)}
-  .reveal{width:calc(100% - 48px);margin-left:auto;margin-right:auto}.reveal h3{font-size:38px}.custom-note{padding:0 28px;margin-top:44px;font-size:24px}
-  .proof{padding:52px 18px 0}.proof-art{border-radius:36% 36% 4px 4px/12% 12% 4px 4px}
-  .hidden-opportunity{padding:70px 24px 78px}.hidden-opportunity h3{font-size:52px}
-  .lead-wrap{padding:64px 24px 78px}.lead h3{font-size:42px}.row{grid-template-columns:1fr}
-}
+:root{--cream:#fbf6e8;--paper:#fffdf7;--green:#0c4439;--gold:#a9791e;--gold2:#d7a93d;--sage:#71807b;--line:#dfd1b3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--green);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}.site{overflow:hidden;background:var(--cream)}
+.header{background:var(--paper);padding:28px 24px 26px}.brand{max-width:1080px;margin:auto;display:flex;align-items:center;gap:20px}.logo{width:72px;height:72px;border:2px solid var(--gold2);border-radius:50%;display:grid;place-items:center;color:#b48627;font:italic 37px Georgia,serif;flex:0 0 auto}.brand-copy h1{margin:0;font-size:26px;letter-spacing:.145em;font-weight:800}.brand-copy p{margin:8px 0 0;color:#7f8580;font-size:16px;letter-spacing:.10em;font-weight:700}.event-bar{background:var(--green);color:#efc96d;text-align:center;padding:20px 14px;font-size:14px;letter-spacing:.18em;font-weight:800}
+.hero{position:relative;padding:88px 24px 86px;background:linear-gradient(180deg,#fbf4df,#f8efda);overflow:hidden}.hero:after{content:"";position:absolute;left:-30%;right:-30%;bottom:-350px;height:570px;background:rgba(255,255,255,.6);border-radius:50% 50% 0 0/35% 35% 0 0;transform:rotate(-2deg)}.hero-inner{position:relative;z-index:1;max-width:1060px;margin:auto}.kicker,.section-kicker{display:flex;align-items:center;gap:17px;color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-size:16px;font-weight:800}.kicker:before,.section-kicker:before{content:"";width:52px;height:2px;background:var(--gold)}.hero h2{margin:40px 0 0;max-width:940px;font:400 clamp(58px,7vw,100px)/.95 Georgia,serif;letter-spacing:-.038em}.hero h2 em{color:#bd8a18;font-weight:400}.hero p{max-width:900px;margin:48px 0 0;color:#697873;font-size:clamp(25px,3vw,36px);line-height:1.55}.hero-actions{display:flex;flex-direction:column;align-items:flex-start;gap:32px;margin-top:60px}.primary{display:flex;align-items:center;justify-content:space-between;gap:44px;min-width:455px;background:#d8aa3c;text-decoration:none;padding:26px 40px;font-size:22px;font-weight:800}.secondary{font-size:20px;font-weight:800;text-decoration:none;border-bottom:2px solid #c3a159;padding-bottom:18px}
+.experience{padding:78px 24px 92px;background:#fffaf0}.experience-inner{max-width:920px;margin:auto}.experience .section-kicker{justify-content:center}.experience h2{max-width:820px;margin:42px auto 20px;text-align:center;font:400 clamp(52px,6vw,78px)/1.03 Georgia,serif;letter-spacing:-.025em}.experience-intro{max-width:760px;margin:0 auto 62px;text-align:center;color:var(--sage);font-size:clamp(20px,2.5vw,28px);line-height:1.58}.cloche-list{display:flex;flex-direction:column;gap:82px;max-width:760px;margin:auto}.cloche-item{text-align:center;cursor:pointer;outline:none}.cloche-img{display:block;width:100%;height:auto;margin:auto;filter:drop-shadow(0 24px 24px rgba(73,53,17,.14));transition:transform .52s cubic-bezier(.2,.8,.2,1)}.touch{margin-top:24px;color:var(--gold);font-size:15px;letter-spacing:.20em;font-weight:800;text-transform:uppercase}.reveal{max-height:0;opacity:0;overflow:hidden;transform:translateY(16px);transition:max-height .52s ease,opacity .38s ease,transform .5s ease;margin-top:12px}.reveal-inner{background:var(--paper);border-top:1px solid var(--line);padding:30px 22px 32px;box-shadow:0 18px 38px rgba(64,47,17,.08)}.reveal small{display:block;color:var(--gold);text-transform:uppercase;letter-spacing:.17em;font-size:12px;font-weight:800}.reveal h3{margin:10px 0 10px;font:400 38px/1.05 Georgia,serif}.reveal p{margin:0;color:var(--sage);font-size:18px;line-height:1.55}.cloche-item.open .cloche-img{transform:translateY(-60px)}.cloche-item.open .touch{opacity:.25}.cloche-item.open .reveal{max-height:360px;opacity:1;transform:translateY(-34px)}.custom-note{max-width:760px;margin:62px auto 0;text-align:center;color:#87918d;font:italic clamp(22px,2.4vw,29px)/1.45 Georgia,serif}
+.hidden-opportunity{background:#f4ead1;padding:88px 24px 96px}.hidden-inner{max-width:980px;margin:auto}.hidden-opportunity h3{margin:38px 0 0;max-width:920px;font:400 clamp(54px,7vw,88px)/1.03 Georgia,serif;letter-spacing:-.025em}
+.lead-wrap{background:var(--paper);padding:76px 24px 92px}.lead{max-width:880px;margin:auto}.lead h3{font:400 48px Georgia,serif;margin:0 0 10px}.lead>p{color:var(--sage);font-size:19px;line-height:1.55;margin:0 0 24px}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.sp{margin-top:14px}input,select{width:100%;padding:15px 16px;border:1px solid #d8ceb8;background:#fff;border-radius:4px;font:inherit;color:var(--green)}.consent{display:block;margin-top:14px;font-size:13px;line-height:1.5;color:#6f746e}.submit{margin-top:16px;width:100%;border:0;background:var(--green);color:#fff;padding:17px 20px;font-size:17px;font-weight:800;cursor:pointer}.paid{margin-top:30px;text-align:center;padding:34px;background:var(--green);color:white}.paid h3{font:400 36px Georgia,serif;margin:0 0 10px}.paid p{color:#d8e0dc;line-height:1.55;margin:0 auto 18px;max-width:700px}.paid a{display:inline-block;background:#d9aa3f;color:var(--green);text-decoration:none;padding:16px 24px;font-weight:800}
+@media(max-width:600px){.header{padding:30px 24px 27px}.brand{gap:19px}.logo{width:64px;height:64px;font-size:32px}.brand-copy h1{font-size:19px}.brand-copy p{font-size:13px}.event-bar{font-size:12px;padding:18px 8px;white-space:nowrap;letter-spacing:.14em}.hero{padding:76px 24px 68px}.hero h2{font-size:54px}.hero p{font-size:24px;margin-top:36px}.primary{min-width:0;width:100%;font-size:18px;padding:21px 24px}.secondary{font-size:17px}.experience{padding:62px 0 80px}.experience .section-kicker{padding:0 24px;justify-content:flex-start}.experience h2{font-size:52px;padding:0 24px;margin-top:34px}.experience-intro{font-size:23px;padding:0 24px;margin-bottom:50px}.cloche-list{gap:70px;max-width:none}.cloche-img{width:100vw;max-width:none}.touch{font-size:14px}.cloche-item.open .cloche-img{transform:translateY(-72px)}.cloche-item.open .reveal{transform:translateY(-50px)}.reveal{width:calc(100% - 48px);margin-left:auto;margin-right:auto}.reveal h3{font-size:38px}.custom-note{padding:0 28px;margin-top:44px;font-size:24px}.hidden-opportunity{padding:70px 24px 78px}.hidden-opportunity h3{font-size:52px}.lead-wrap{padding:64px 24px 78px}.lead h3{font-size:42px}.row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -93,70 +21,18 @@ input,select{width:100%;padding:15px 16px;border:1px solid #d8ceb8;background:#f
 <header class="header"><div class="brand"><div class="logo">C</div><div class="brand-copy"><h1>CHARITY LOVES AI</h1><p>Restaurant Growth Systems</p></div></div></header>
 <div class="event-bar">Restaurant Event Offer · 10 Launch Tables Available</div>
 <section class="hero"><div class="hero-inner"><div class="kicker">Tonight’s Growth Special</div><h2>Turn one-time<br>diners into <em>repeat<br>guests.</em></h2><p>Recover missed calls, reconnect with past customers, and give every new diner a reason to return—automatically.</p><div class="hero-actions"><a class="primary" href="#cloches"><span>Reserve my launch table</span><span>→</span></a><a class="secondary" href="#cloches">View the guest revival menu</a></div></div></section>
-<section class="experience" id="cloches"><div class="experience-inner">
-  <div class="section-kicker">Choose Your Restaurant Automation</div>
-  <h2>Touch a golden dome.<br>Reveal the offer underneath.</h2>
-  <p class="experience-intro">Each cloche hides a different revenue opportunity. Lift one to discover the matching automation blueprint.</p>
-  <div class="cloche-grid">
-    <article class="cloche-item" data-offer="Bring Guests Back" tabindex="0" aria-label="Reveal Bring Guests Back">
-      <div class="cloche-stage"><img class="cloche-img" src="assets/golden-cloche-hq.webp" alt="Polished golden restaurant cloche"></div>
-      <div class="touch">Touch to lift</div>
-      <div class="reveal"><div class="reveal-inner"><small>Reconnect</small><h3>Bring Guests Back</h3><p>Reconnect with past diners and create consistent reasons to return.</p></div></div>
-    </article>
-    <article class="cloche-item" data-offer="Fill the Quiet Hours" tabindex="0" aria-label="Reveal Fill the Quiet Hours">
-      <div class="cloche-stage"><img class="cloche-img" src="assets/golden-cloche-hq.webp" alt="Polished golden restaurant cloche"></div>
-      <div class="touch">Touch to lift</div>
-      <div class="reveal"><div class="reveal-inner"><small>Recover</small><h3>Fill the Quiet Hours</h3><p>Use targeted outreach to create demand during slower service periods.</p></div></div>
-    </article>
-    <article class="cloche-item" data-offer="Guest Growth System" tabindex="0" aria-label="Reveal Guest Growth System">
-      <div class="cloche-stage"><img class="cloche-img" src="assets/golden-cloche-hq.webp" alt="Polished golden restaurant cloche"></div>
-      <div class="touch">Touch to lift</div>
-      <div class="reveal"><div class="reveal-inner"><small>Return</small><h3>Guest Growth System</h3><p>Recover missed calls, strengthen reviews, and automate repeat-visit follow-up.</p></div></div>
-    </article>
-  </div>
-  <div class="custom-note">Every offer is customized to your restaurant, margins, brand, and guest experience.</div>
-</div></section>
-<section class="proof"><div class="proof-inner"><img class="proof-art" src="assets/guest-revival-reveal.jpg" alt="Guest Revival restaurant reveal showing repeat visit opportunity"></div></section>
+<section class="experience" id="cloches"><div class="experience-inner"><div class="section-kicker">Choose Your Restaurant Automation</div><h2>Touch a golden dome.<br>Reveal the offer underneath.</h2><p class="experience-intro">Each cloche hides a different revenue opportunity. Lift one to discover the matching automation blueprint.</p>
+<div class="cloche-list">
+<article class="cloche-item" data-offer="Bring Guests Back" tabindex="0"><img class="cloche-img" src="assets/golden-cloche-real.jpg" alt="Polished golden restaurant cloche"><div class="touch">Touch to lift</div><div class="reveal"><div class="reveal-inner"><small>Reconnect</small><h3>Bring Guests Back</h3><p>Reconnect with past diners and create consistent reasons to return.</p></div></div></article>
+<article class="cloche-item" data-offer="Fill the Quiet Hours" tabindex="0"><img class="cloche-img" src="assets/golden-cloche-real.jpg" alt="Polished golden restaurant cloche"><div class="touch">Touch to lift</div><div class="reveal"><div class="reveal-inner"><small>Recover</small><h3>Fill the Quiet Hours</h3><p>Use targeted outreach to create demand during slower service periods.</p></div></div></article>
+<article class="cloche-item" data-offer="Guest Growth System" tabindex="0"><img class="cloche-img" src="assets/golden-cloche-real.jpg" alt="Polished golden restaurant cloche"><div class="touch">Touch to lift</div><div class="reveal"><div class="reveal-inner"><small>Return</small><h3>Guest Growth System</h3><p>Recover missed calls, strengthen reviews, and automate repeat-visit follow-up.</p></div></div></article>
+</div><div class="custom-note">Every offer is customized to your restaurant, margins, brand, and guest experience.</div></div></section>
 <section class="hidden-opportunity"><div class="hidden-inner"><div class="section-kicker">The Hidden Opportunity</div><h3>Your next full dining room may already be in your phone.</h3></div></section>
-<section class="lead-wrap"><div class="lead">
-  <h3>Reserve your launch table</h3><p>Your selected automation is included automatically.</p>
-  <form id="leadForm">
-    <div class="row"><input name="first_name" placeholder="First name" required><input name="last_name" placeholder="Last name" required></div>
-    <div class="row sp"><input type="email" name="email" placeholder="Email" required><input name="phone" placeholder="Mobile phone"></div>
-    <div class="row sp"><input name="business_name" placeholder="Restaurant / business name" required><select name="selected_offer" id="offer"><option value="">Choose your priority</option><option>Bring Guests Back</option><option>Fill the Quiet Hours</option><option>Guest Growth System</option></select></div>
-    <label class="consent"><input type="checkbox" name="sms_consent" value="yes"> I agree to receive follow-up texts about my restaurant growth request. Message/data rates may apply. Reply STOP to opt out.</label>
-    <input type="hidden" name="source" value="Restaurant Convention 2026">
-    <button class="submit" type="submit">Reserve My Launch Table</button>
-    <div id="status">Your information will be sent securely to Charity Loves AI.</div>
-  </form>
-  <div class="paid"><h3>Restaurant Guest Revival™</h3><p>Ready to activate the full monthly guest reactivation system?</p><a href="https://buy.stripe.com/4gM7sL9PP7v2g7AfLa1ZS08">Start My Guest Revival — $297/Month</a></div>
-</div></section>
+<section class="lead-wrap"><div class="lead"><h3>Reserve your launch table</h3><p>Your selected automation is included automatically.</p><form id="leadForm"><div class="row"><input name="first_name" placeholder="First name" required><input name="last_name" placeholder="Last name" required></div><div class="row sp"><input type="email" name="email" placeholder="Email" required><input name="phone" placeholder="Mobile phone"></div><div class="row sp"><input name="business_name" placeholder="Restaurant / business name" required><select name="selected_offer" id="offer"><option value="">Choose your priority</option><option>Bring Guests Back</option><option>Fill the Quiet Hours</option><option>Guest Growth System</option></select></div><label class="consent"><input type="checkbox" name="sms_consent" value="yes"> I agree to receive follow-up texts about my restaurant growth request. Message/data rates may apply. Reply STOP to opt out.</label><input type="hidden" name="source" value="Restaurant Convention 2026"><button class="submit" type="submit">Reserve My Launch Table</button><div id="status">Your information will be sent securely to Charity Loves AI.</div></form><div class="paid"><h3>Restaurant Guest Revival™</h3><p>Ready to activate the full monthly guest reactivation system?</p><a href="https://buy.stripe.com/4gM7sL9PP7v2g7AfLa1ZS08">Start My Guest Revival — $297/Month</a></div></div></section>
 </div>
 <script>
-const select=document.getElementById('offer');
-const items=[...document.querySelectorAll('.cloche-item')];
-items.forEach(item=>{
-  const open=()=>{
-    const wasOpen=item.classList.contains('open');
-    items.forEach(i=>i.classList.remove('open'));
-    if(!wasOpen){item.classList.add('open');select.value=item.dataset.offer;}
-  };
-  item.addEventListener('click',open);
-  item.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
-});
-document.getElementById('leadForm').addEventListener('submit',async e=>{
-  e.preventDefault();
-  const status=document.getElementById('status');
-  const fd=new FormData(e.currentTarget);
-  const payload=Object.fromEntries(fd.entries());
-  payload.sms_consent=fd.get('sms_consent')==='yes';
-  status.textContent='Sending…';
-  try{
-    const res=await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    if(!res.ok) throw new Error('Request failed');
-    status.textContent='Success — your launch table request is in.';
-    e.currentTarget.reset();items.forEach(i=>i.classList.remove('open'));
-  }catch(err){status.textContent='We could not submit the form. Please try again or speak with Charity directly.';}
-});
+const offerSelect=document.getElementById('offer');const cards=[...document.querySelectorAll('.cloche-item')];cards.forEach(card=>{const activate=()=>{cards.forEach(c=>c.classList.remove('open'));card.classList.add('open');offerSelect.value=card.dataset.offer};card.addEventListener('click',activate);card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate()}})});
+document.getElementById('leadForm').addEventListener('submit',async e=>{e.preventDefault();const status=document.getElementById('status');const fd=new FormData(e.currentTarget);const payload=Object.fromEntries(fd.entries());payload.sms_consent=fd.get('sms_consent')==='yes';status.textContent='Sending…';try{const res=await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!res.ok)throw new Error('Request failed');status.textContent='Success — your launch table request is in.';e.currentTarget.reset();cards.forEach(c=>c.classList.remove('open'))}catch(err){status.textContent='We could not submit the form. Please try again or speak with Charity directly.'}});
 </script>
-</body></html>
+</body>
+</html>
